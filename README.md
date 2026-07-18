@@ -4,8 +4,15 @@
 Zero runtime dependencies. OAuth user flow. Structured JSON output. Machine-readable errors.
 
 ```bash
-npx @casys-ai/gsc-cli gsc-query --site sc-domain:example.com --dim query --json
+# Install from GitHub (not published to npm — install straight from the repo)
+npm i -g github:Casys-AI/gsc-cli
+
+gsc-query --site sc-domain:example.com --dim query --json
 ```
+
+> Prefer no global install? One-off: `npx -p github:Casys-AI/gsc-cli gsc-query …`.
+> As a library: `npm i github:Casys-AI/gsc-cli` (installs under the name
+> `@casys-ai/gsc-cli`, so the imports below work unchanged).
 
 Two small binaries and a library:
 
@@ -55,7 +62,7 @@ inputs are validated at the boundary before any network call. (See
 ### 2. Bootstrap the refresh token
 
 ```bash
-npx @casys-ai/gsc-cli gsc-auth
+gsc-auth   # (or: npx -p github:Casys-AI/gsc-cli gsc-auth)
 ```
 
 This opens your browser, you authorize (you'll see an "unverified app" warning →
