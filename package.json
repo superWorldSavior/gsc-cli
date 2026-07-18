@@ -1,0 +1,58 @@
+{
+  "name": "@casys-ai/gsc-cli",
+  "version": "1.0.0",
+  "description": "Zero-dependency Google Search Console CLI + library, designed for agents. OAuth user flow, structured JSON output, machine-readable errors.",
+  "type": "module",
+  "license": "MIT",
+  "author": "Casys AI",
+  "homepage": "https://github.com/Casys-AI/gsc-cli#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Casys-AI/gsc-cli.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Casys-AI/gsc-cli/issues"
+  },
+  "keywords": [
+    "google-search-console",
+    "gsc",
+    "search-console",
+    "seo",
+    "cli",
+    "oauth",
+    "webmasters",
+    "agent",
+    "ax",
+    "zero-dependency"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "main": "index.js",
+  "types": "index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "import": "./index.js"
+    }
+  },
+  "bin": {
+    "gsc-auth": "bin/gsc-auth.js",
+    "gsc-query": "bin/gsc-query.js"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "lib/",
+    "bin/",
+    "README.md",
+    "AGENTS.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "test": "node --test",
+    "gsc-auth": "node bin/gsc-auth.js",
+    "gsc-query": "node bin/gsc-query.js"
+  },
+  "dependencies": {}
+}

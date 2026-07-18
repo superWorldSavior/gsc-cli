@@ -1,0 +1,8 @@
+node_modules/
+*.log
+.DS_Store
+.env
+.env.*
+# Never commit credentials
+gsc-oauth-client.json
+gsc-tokens.json
