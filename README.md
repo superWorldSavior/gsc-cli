@@ -5,13 +5,13 @@ Zero runtime dependencies. OAuth user flow. Structured JSON output. Machine-read
 
 ```bash
 # Install from GitHub (not published to npm — install straight from the repo)
-npm i -g github:Casys-AI/gsc-cli
+npm i -g github:superWorldSavior/gsc-cli
 
 gsc-query --site sc-domain:example.com --dim query --json
 ```
 
-> Prefer no global install? One-off: `npx -p github:Casys-AI/gsc-cli gsc-query …`.
-> As a library: `npm i github:Casys-AI/gsc-cli` (installs under the name
+> Prefer no global install? One-off: `npx -p github:superWorldSavior/gsc-cli gsc-query …`.
+> As a library: `npm i github:superWorldSavior/gsc-cli` (installs under the name
 > `@casys-ai/gsc-cli`, so the imports below work unchanged).
 
 Two small binaries and a library:
@@ -62,7 +62,7 @@ inputs are validated at the boundary before any network call. (See
 ### 2. Bootstrap the refresh token
 
 ```bash
-gsc-auth   # (or: npx -p github:Casys-AI/gsc-cli gsc-auth)
+gsc-auth   # (or: npx -p github:superWorldSavior/gsc-cli gsc-auth)
 ```
 
 This opens your browser, you authorize (you'll see an "unverified app" warning →
@@ -205,7 +205,7 @@ Exports: `bootstrapOAuth`, `refreshAccessToken`, `buildAuthUrl`,
 ## Development
 
 ```bash
-git clone https://github.com/Casys-AI/gsc-cli
+git clone https://github.com/superWorldSavior/gsc-cli
 cd gsc-cli
 node --test          # runs the (network-free) boundary tests
 node bin/gsc-query.js --help  # or just read bin/*.js
